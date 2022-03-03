@@ -449,8 +449,14 @@ function slice() {
     min: min,
     sum: sum,
     random: {
-      normal: (shape) => fromfunction(shape, d3.randomNormal()),
-      uniform: (shape) => fromfunction(shape, d3.randomUniform())
+      normal: (shape) =>
+        fromfunction(
+          shape,
+          () =>
+            Math.sqrt(-2 * Math.log(Math.random())) *
+            Math.cos(2 * Math.PI * Math.random())
+        ),
+      uniform: (shape) => fromfunction(shape, Math.random)
     },
     broadcastTo: broadcastTo,
     broadcastShapes: broadcastShapes,
