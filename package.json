@@ -1,0 +1,24 @@
+{
+  "name": "np",
+  "version": "1.0.0",
+  "description": "numpy-style slicing",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilichj/np.git"
+  },
+  "author": "Jordan Bilich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bilichj/np/issues"
+  },
+  "homepage": "https://github.com/bilichj/np#readme",
+  "dependencies": {
+    "d3": "^7.3.0",
+    "lodash": "^4.17.21"
+  }
+}
